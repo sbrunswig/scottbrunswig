@@ -1,0 +1,34 @@
+body {
+    font-family: monospace;
+}
+.bgc-gray900    { background-color: #282828; }
+.ai-c           { align-items: center; }
+.c-green100     { color: #41FF00; }
+.d-f            { display: flex; }
+.fxd-c          { flex-direction: column; }
+.jc-c           { justify-content: center; }
+.p              { padding: 1.5rem; }
+.pt             { padding-top: 1.5rem; }
+.h-100vh        { height: 100vh; }
+.w-50\/100      { width: 50%; }
+.fz-2rem        { font-size: 2rem; }
+
+  .typing-demo {
+    width: 14ch;
+    animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
