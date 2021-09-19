@@ -1,6 +1,8 @@
 body {
     font-family: monospace;
 }
+.bdw-3          { border-width: 3px; }
+.bdrs-s         { border-right-style: solid; }
 .bgc-gray900    { background-color: #282828; }
 .ai-c           { align-items: center; }
 .c-green100     { color: #41FF00; }
@@ -8,27 +10,33 @@ body {
 .fxd-c          { flex-direction: column; }
 .jc-c           { justify-content: center; }
 .p              { padding: 1.5rem; }
-.pt             { padding-top: 1.5rem; }
+.mt             { margin-top: 1.5rem; }
 .h-100vh        { height: 100vh; }
-.w-50\/100      { width: 50%; }
 .fz-2rem        { font-size: 2rem; }
+.ov-h           { overflow: hidden; }
+.w-1\/1         { width: 100%; }
+.w-14ch         { width: 14ch; }
+.whs-nw         { white-space: nowrap; }
+@media only screen and (max-width: 811px) {
+  .mt\@sm           { margin-top: 1.5rem; }
+}
+@media only screen and (min-width: 812px) {
+  .w-50\/100\@md    { width: 50%; }
+  .d-f\@md          { display: flex; }
+}
 
-  .typing-demo {
-    width: 14ch;
-    animation: typing 2s steps(14), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
+.typing-demo {
+  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+}
