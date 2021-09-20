@@ -1,33 +1,53 @@
-body {
-    font-family: monospace;
-}
-.bdw-3          { border-width: 3px; }
-.bdrs-s         { border-right-style: solid; }
-.bgc-gray900    { background-color: #282828; }
-.ai-c           { align-items: center; }
-.c-green100     { color: #41FF00; }
-.d-f            { display: flex; }
-.fxd-c          { flex-direction: column; }
-.jc-c           { justify-content: center; }
-.p              { padding: 1.5rem; }
-.mt             { margin-top: 1.5rem; }
-.h-100vh        { height: 100vh; }
-.fz-2rem        { font-size: 2rem; }
-.ov-h           { overflow: hidden; }
-.w-1\/1         { width: 100%; }
-.w-14ch         { width: 14ch; }
-.whs-nw         { white-space: nowrap; }
-@media only screen and (max-width: 811px) {
-  .mt\@sm           { margin-top: 1.5rem; }
-}
-@media only screen and (min-width: 812px) {
-  .w-50\/100\@md    { width: 50%; }
-  .d-f\@md          { display: flex; }
-}
+/* reset/normalize */
+* { box-sizing: border-box; }
 
-.typing-demo {
-  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
-}
+/* background */
+.bgc-gray900            { background-color: #282828; }
+.f-limea100             { fill: #41FF00; }
+.f-green800-hv:hover    { fill: #2E7D32; }
+
+/* border */
+.bdrs-s         { border-right-style: solid; }
+.bdw-3          { border-width: 3px; }
+
+/* box */
+.h            { height: 1.5rem; }
+.mih-100vh    { height: 100vh; }
+.w            { width: 1.5rem; }
+.w-15ch        { width: 15ch; }
+
+/* color */
+.c-limea100     { color: #41FF00; }
+
+/* display */
+.d-f    { display: flex; }
+.d-ib   { display: inline-block; }
+.d-g    { display: grid; }
+
+/* font */
+.ff-monospace { font-family: monospace; }
+.fz\+    { font-size: 2rem; }
+
+/* grid */
+.ai-c      { align-items: center; }
+.gg        { grid-gap: 1.5rem; }
+.gtc-01    { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
+.gtr-01    { grid-template-rows: 1fr auto;  }
+.jc-c      { justify-content: center; }
+
+/* others */
+.anim-01 { animation: typing 2s steps(14), blink .5s step-end infinite alternate; }
+
+/* spacing */
+.m0    { margin: 0; }
+.ml    { margin-left: 1.5rem; }
+.mt    { margin-top: 1.5rem; }
+.p     { padding: 1.5rem; }
+
+/* text */
+.ov-h      { overflow: hidden; }
+.ta-c      { text-align: center; }
+.whs-nw    { white-space: nowrap; }
 
 @keyframes typing {
   from {
